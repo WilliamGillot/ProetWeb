@@ -174,7 +174,7 @@ yarn build
 
 **Pour transferer les fichiers sur la raspberry**
 ```bash
-scp -r -p chemin/vers/dossier/source user@ip:chemin/vers/dossier/destination
+scp -r -p /chemin/vers/dossier/source user@ip:/chemin/vers/dossier/destination
 ```
 
 **Pour créer un lien symbolique entre deux fichiers**
