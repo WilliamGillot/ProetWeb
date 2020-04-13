@@ -16,7 +16,7 @@
 
 **Matériels**
 
-Raspberry Pi 4 (Raspbian Buster)\  
+Raspberry Pi 4 (Raspbian Buster)  
 Livebox
 
 
