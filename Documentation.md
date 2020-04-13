@@ -2,28 +2,28 @@
 
 ## A- Présentation
 
-###I- Diaporama
+### I- Diaporama
 
 [Lien de la présentation](https://www.canva.com/design/DAD1GkHHv_Q/quOE6o_ii10qIKzrpJ7FTA/view?utm_content=DAD1GkHHv_Q&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton&fbclid=IwAR1G7Pt1T8zxhEBWF1_YGUfD1B7f0-tGOz6sgU-_uOqTxCaPXd-dLiSOtv8)
 
-###II- Site
+### II- Site
 
 [Lien vers notre site héberger sur notre raspberry](koeltoxik.ddns.net)
 
 ## B- Initialisation du projet
 
-###I- Pré-requis
+### I- Pré-requis
 
-**Matériels
+**Matériels**
 
 Raspberry Pi 4 (Raspbian Buster)
 
 Livebox
 
 
-###II- Installation et initialisation du projet
+### II- Installation et initialisation du projet
 
-**Configuration de la raspberry
+**Configuration de la raspberry**
 
 Installation de raspbian 10 (Buster)
 
@@ -32,18 +32,24 @@ Ouverture et fowarding des ports 22, 80, 443 et 8000
 Mise en place de clé privée pour désactiver la connection ssh par mot de passe
 
 
-**Installation des dépendances
+**Installation des dépendances**
 
 php7.3
+
 php7.3-mysql
+
 PHP7.3-xml
+
 php7.3-mbstring
+
 php7.3-curl
+
 php7.3-zip
+
 MariaDB
 
 
-*Clonage du dépot git et attribution de droit*
+**Clonage du dépot git et attribution de droit**
 ```bash
 git clone --recurse-submodules https://github.com/phanan/koel.git
 git checkout v4.2.2
