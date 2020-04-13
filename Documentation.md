@@ -25,7 +25,7 @@ Livebox
 
 Installation de raspbian 10 (Buster)  
 Ouverture et fowarding des ports 22, 80, 443 et 8000  
-Mise en place de clé privée pour désactiver la connection ssh par mot de passe
+Mise en place de clé privée pour désactiver la connection ssh par mot de passe.
 
 **Installation des dépendances**
 
@@ -66,7 +66,7 @@ composer install
 ```
 En cas d'erreur (ARM):  
 Enlever cypress du package.json et ajouter les assets à la main  
-Enlever le bar.gif ou la modifier en fichier PNG
+Enlever le bar.gif ou la modifier en fichier PNG.
 
 **Lancement du projet et du serveur local à l'aide de php artisan**
 ```bash
@@ -184,17 +184,17 @@ ln –s /chemin/dossier1 /chemin/dossier2
 
 ### II- Ajout d'un Register au niveau du login
 
-Tout en gardant le format de koel, nous avons ajouté un bouton register au niveau du login qui ouvre un modal sous forme de pop up dans le même esprit que koel
+Tout en gardant le format de koel, nous avons ajouté un bouton register au niveau du login qui ouvre un modal sous forme de pop up dans le même esprit que koel.
 
 ### III- Ajout d'une page Upload
 
-Toujours dans le même esthétique que koel, nous avons ajouté une nouvelle page /file pour permettre d uploader des musiques directement sur l application et notre dossier source, il faut tout de même qu un administrateur face la synchronisation pour que les musiques s'affichent pour garder un minimum de contrôle
+Toujours dans le même esthétique que koel, nous avons ajouté une nouvelle page /file pour permettre d uploader des musiques directement sur l application et notre dossier source, il faut tout de même qu un administrateur face la synchronisation pour que les musiques s'affichent pour garder un minimum de contrôle.
 
 ### IV- Ajout de plusieurs API
 
 Ajout de l API Last.fm pour avoir le cover, l album et l artiste  
 Ajout de l API Youtube pour avoir les vidéos lors de la lecture d'une musique  
-Ajout de l API Pusher pour prendre le contrôle de KoelDesktop depuis son téléphone (disponible uniquement sur MacOS)
+Ajout de l API Pusher pour prendre le contrôle de KoelDesktop depuis son téléphone (disponible uniquement sur MacOS).
 
 
 ## E- Problèmes rencontrés
@@ -203,11 +203,11 @@ Ajout de l API Pusher pour prendre le contrôle de KoelDesktop depuis son télé
 
 **Les dépendances**
 
-Certaines dépendances ne sont pas supportés par l ARM comme cypress ou les gif, ce qui bloque le rendu de certain visuel ou l init du projet
+Certaines dépendances ne sont pas supportés par l ARM comme cypress ou les gif, ce qui bloque le rendu de certain visuel ou l init du projet.
 
 **La compilation**
 
-Il est impossible de compiler avec un npm run watch ou yarn build sur de l ARM donc de voir les modifications des fichiers
+Il est impossible de compiler avec un npm run watch ou yarn build sur de l ARM donc de voir les modifications des fichiers.
 
 ### II- L'installation de l'API de google pour l'authentification
 
@@ -219,7 +219,7 @@ Après avoir mis en place l environnement et créer un compte sur mailgun et pos
 
 ### IV- Le Token de connection
 
-Le token de connection nous a complétement bloqué sur les middlewares et controller pour notre upload car nous n avons pas réussi à le garder lorsque l on passait sur le /file
+Le token de connection nous a complétement bloqué sur les middlewares et controller pour notre upload car nous n avons pas réussi à le garder lorsque l on passait sur le /file.
 
 ### V- La compréhension du code
 
