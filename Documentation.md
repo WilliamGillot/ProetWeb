@@ -19,34 +19,23 @@
 Raspberry Pi 4 (Raspbian Buster)  
 Livebox
 
-
 ### II- Installation et initialisation du projet
 
 **Configuration de la raspberry**
 
-Installation de raspbian 10 (Buster)
-
-Ouverture et fowarding des ports 22, 80, 443 et 8000
-
+Installation de raspbian 10 (Buster)  
+Ouverture et fowarding des ports 22, 80, 443 et 8000  
 Mise en place de clé privée pour désactiver la connection ssh par mot de passe
-
 
 **Installation des dépendances**
 
-php7.3
-
-php7.3-mysql
-
-PHP7.3-xml
-
-php7.3-mbstring
-
-php7.3-curl
-
-php7.3-zip
-
+php7.3  
+php7.3-mysql  
+php7.3-xml  
+php7.3-mbstring  
+php7.3-curl  
+php7.3-zip  
 MariaDB
-
 
 **Clonage du dépot git et attribution de droit**
 ```bash
@@ -75,12 +64,9 @@ php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer
 composer install
 ```
-En cas d'erreur (ARM):
-
-Enlever cypress du package.json et ajouter les assets à la main
-
+En cas d'erreur (ARM):  
+Enlever cypress du package.json et ajouter les assets à la main  
 Enlever le bar.gif ou la modifier en fichier PNG
-
 
 **Lancement du projet et du serveur local à l'aide de php artisan**
 ```bash
@@ -91,7 +77,6 @@ php artisan serv
 **Vérification sur localhost**
 
 Vérifier le premier rendu visuel sur http://localhost:8000
-
 
 ### III- Mise en place d'un reverse Proxy
 
@@ -104,8 +89,7 @@ sudo ln -s /etc/nginx/sites-available/koel.conf /etc/nginx/sites-enabled/
 
 **Configuration de Nginx**
 
-[Générateur de fichier Nginx](https://www.digitalocean.com/community/tools/nginx)
-
+[Générateur de fichier Nginx](https://www.digitalocean.com/community/tools/nginx)  
 [Exemple de configuration pour koel](https://github.com/phanan/koel/blob/master/nginx.conf.example)
 
 **Port Forwarding**
@@ -129,7 +113,6 @@ sudo systemctl enable nginx
 
 [Lien du dépôt des Maj](https://github.com/phanan/koel/releases)
 
-
 **Mettre à jour**
 ```bash
 git checkout v4.2.2
@@ -139,10 +122,8 @@ git checkout v4.2.2
 
 ### I- Les views
 
-Nos views se situent dans deux endroits:
-
-Pour nos .vue: /ressources/assets/js/components
-
+Nos views se situent dans deux endroits:  
+Pour nos .vue: /ressources/assets/js/components  
 Pour nos .blade.php: /ressources/views
 
 
@@ -150,27 +131,20 @@ Pour nos .blade.php: /ressources/views
 
 Nos API ont tout d abord été configurées dans le .env puis dans différent fichier en fonction de l API.
 
-
 ### III- Nos routes et controller
 
-Pour nos routes: /routes
-
+Pour nos routes: /routes  
 Pour nos controller: /App/Http/Controller
-
 
 ### IV- Emplacement des fichiers Upload
 
-Les Uploads effectués sur le site se trouve à deux endroits reliés par un lien symbolique:
-
-Dans notre dossier Koel: /public/file
-
+Les Uploads effectués sur le site se trouve à deux endroits reliés par un lien symbolique:  
+Dans notre dossier Koel: /public/file  
 Sur notre Raspberry: /home/pi/Music
-
 
 ## D- Développement du projet
 
 ### I- Quelques commandes
-
 
 **php artisan migrate**
 ```bash
@@ -212,16 +186,14 @@ ln –s /chemin/dossier1 /chemin/dossier2
 
 Tout en gardant le format de koel, nous avons ajouté un bouton register au niveau du login qui ouvre un modal sous forme de pop up dans le même esprit que koel
 
-
 ### III- Ajout d'une page Upload
 
 Toujours dans le même esthétique que koel, nous avons ajouté une nouvelle page /file pour permettre d uploader des musiques directement sur l application et notre dossier source, il faut tout de même qu un administrateur face la synchronisation pour que les musiques s'affichent pour garder un minimum de contrôle
 
-
 ### IV- Ajout de plusieurs API
 
-Ajout de l API Last.fm pour avoir le cover, l album et l artiste
-Ajout de l API Youtube pour avoir les vidéos lors de la lecture d'une musique
+Ajout de l API Last.fm pour avoir le cover, l album et l artiste  
+Ajout de l API Youtube pour avoir les vidéos lors de la lecture d'une musique  
 Ajout de l API Pusher pour prendre le contrôle de KoelDesktop depuis son téléphone (disponible uniquement sur MacOS)
 
 
@@ -233,26 +205,21 @@ Ajout de l API Pusher pour prendre le contrôle de KoelDesktop depuis son télé
 
 Certaines dépendances ne sont pas supportés par l ARM comme cypress ou les gif, ce qui bloque le rendu de certain visuel ou l init du projet
 
-
 **La compilation**
 
 Il est impossible de compiler avec un npm run watch ou yarn build sur de l ARM donc de voir les modifications des fichiers
-
 
 ### II- L'installation de l'API de google pour l'authentification
 
 Après avoir ajouté le plugin pour l API de google, notre page de login chargeait à l infini...
 
-
 ### III- Mise en place d'un systeme d'envoi de mail
 
 Après avoir mis en place l environnement et créer un compte sur mailgun et postman, il était impossible de voir si les mails étaient bien reçu car il fallait passer sur une version payante.
 
-
 ### IV- Le Token de connection
 
 Le token de connection nous a complétement bloqué sur les middlewares et controller pour notre upload car nous n avons pas réussi à le garder lorsque l on passait sur le /file
-
 
 ### V- La compréhension du code
 
@@ -262,44 +229,35 @@ Ce qui nous a pris le plus de temps sur ce projet, comprendre et s approprier un
 
 ### I- Koel
 
-[Site Officiel](https://koel.dev/)
-
+[Site Officiel](https://koel.dev/)  
 [Koel Issues](https://github.com/phanan/koel/issues)
 
 ### II- Laravel
 
-[Site Officiel](https://laravel.com/)
-
-[Documentation Officiel](https://laravel.com/docs/7.x)
-
+[Site Officiel](https://laravel.com/)  
+[Documentation Officiel](https://laravel.com/docs/7.x)  
 [Documentation Unofficiel](http://laravel.sillo.org/)
 
 ### III- API
 
-[API Directory](https://www.programmableweb.com/apis/directory)
-
-[Site Officiel Last.fm](https://www.last.fm/fr/)
-
-[API Last.fm](https://www.last.fm/api/?lang=fr&)
-
-[API Youtube](https://developers.google.com/youtube)
-
+[API Directory](https://www.programmableweb.com/apis/directory)  
+[Site Officiel Last.fm](https://www.last.fm/fr/)  
+[API Last.fm](https://www.last.fm/api/?lang=fr&)  
+[API Youtube](https://developers.google.com/youtube)  
 [API Pusher](https://pusher.com/docs/channels)
 
 ### IV- Mail
 
-[Mailgun](https://www.mailgun.com/)
-
+[Mailgun](https://www.mailgun.com/)  
 [Postman](https://www.postman.com/)
 
 ### V- Réseau
 
-[NoIp](https://www.noip.com/)
-[Nginx Documentation](https://nginx.org/en/docs/)
+[NoIp](https://www.noip.com/)  
+[Nginx Documentation](https://nginx.org/en/docs/)  
 [Nginx Config](https://www.digitalocean.com/community/tools/nginx)
 
 ### VI- Raspberry
-[Site officiel de Raspberry](https://www.raspberrypi.org/)
-
+[Site officiel de Raspberry](https://www.raspberrypi.org/)  
 [Site officiel de Raspbian](https://www.raspbian.org/)
 
