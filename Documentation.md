@@ -3,14 +3,10 @@
 ## A- Présentation
 
 **I- Diaporama**
-```bash
 [Lien de la présentation] (https://www.canva.com/design/DAD1GkHHv_Q/quOE6o_ii10qIKzrpJ7FTA/view?utm_content=DAD1GkHHv_Q&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton&fbclid=IwAR1G7Pt1T8zxhEBWF1_YGUfD1B7f0-tGOz6sgU-_uOqTxCaPXd-dLiSOtv8)
-```
 
 **II- Site**
-```bash
 [Lien du site] (koeltoxik.ddns.net)
-```
 
 ## B- Initialisation du projet
 
@@ -242,50 +238,36 @@ Le token de connection nous a complétement bloqué sur les middlewares et contr
 ```
 
 **V- La compréhension du code**
-```bash
 Ce qui nous a pris le plus de temps sur ce projet, comprendre et s approprier un code que nous n avons pas écrit était vraiment un défi car ce sont des techs que nous ne connaissions pas et nous avons du nous mettre à niveau sur beaucoup de points pour pouvoir développer sans avoir de conflit.
-```
 
 ## F- Sites utiles
 
 **I- Koel**
-```bash
 [Site Officiel] (https://koel.dev/)
 [Koel Issues] (https://github.com/phanan/koel/issues)
-```
 
 **II- Laravel**
-```bash
 [Site Officiel] (https://laravel.com/)
 [Documentation Officiel] (https://laravel.com/docs/7.x)
 [Documentation Unofficiel] (http://laravel.sillo.org/)
-```
 
 **III- API**
-```bash
 [API Directory] (https://www.programmableweb.com/apis/directory)
 [Site Officiel Last.fm] (https://www.last.fm/fr/)
 [API Last.fm] (https://www.last.fm/api/?lang=fr&)
 [API Youtube] (https://developers.google.com/youtube)
 [API Pusher] (https://pusher.com/docs/channels)
-```
 
 **IV- Mail**
-```bash
 [Mailgun] (https://www.mailgun.com/)
 [Postman] (https://www.postman.com/)
-```
 
 **V- Réseau**
-```bash
 [NoIp] (https://www.noip.com/)
 [Nginx Documentation] (https://nginx.org/en/docs/)
 [Nginx Config] (https://www.digitalocean.com/community/tools/nginx)
-```
 
 **VI- Raspberry**
-```bash
 [Site officiel de Raspberry] (https://www.raspberrypi.org/)
 [Site officiel de Raspbian] (https://www.raspbian.org/)
-```
 
