@@ -8,29 +8,29 @@
 
 **II- Site**
 
-[Lien du site](koeltoxik.ddns.net)
+[Lien vers notre site héberger sur notre raspberry](koeltoxik.ddns.net)
 
 ## B- Initialisation du projet
 
 **I- Pré-requis**
 
 *Matériels*
-```bash
+
 Raspberry Pi 4 (Raspbian Buster)
 Livebox
-```
+
 
 **II- Installation et initialisation du projet**
 
 *Configuration de la raspberry*
-```bash
+
 Installation de raspbian 10 (Buster)
 Ouverture et fowarding des ports 22, 80, 443 et 8000
 Mise en place de clé privée pour désactiver la connection ssh par mot de passe
-```
+
 
 *Installation des dépendances*
-```bash
+
 php7.3
 php7.3-mysql
 PHP7.3-xml
@@ -38,7 +38,7 @@ php7.3-mbstring
 php7.3-curl
 php7.3-zip
 MariaDB
-```
+
 
 *Clonage du dépot git et attribution de droit*
 ```bash
@@ -66,11 +66,11 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer
 composer install
-
+```
 En cas d'erreur (ARM):
 Enlever cypress du package.json et ajouter les assets à la main
 Enlever le bar.gif ou la modifier en fichier PNG
-```
+
 
 *Lancement du projet et du serveur local à l'aide de php artisan*
 ```bash
@@ -79,9 +79,9 @@ php artisan serv
 ```
 
 *Vérification sur localhost*
-```bash
+
 Vérifier le premier rendu visuel sur http://localhost:8000
-```
+
 
 **III- Mise en place d'un reverse Proxy**
 
@@ -128,22 +128,22 @@ git checkout v4.2.2
 ## C- Architecture du site
 
 **I- Les views**
-```bash
+
 Nos views se situent dans deux endroits:
 Pour nos .vue: /ressources/assets/js/components
 Pour nos .blade.php: /ressources/views
-```
+
 
 **II- Nos configurations d'API**
-```
+
 Nos API ont tout d abord été configurées dans le .env puis dans différent fichier en fonction de l API.
-```
+
 
 **III- Nos routes et controller**
-```bash
+
 Pour nos routes: /routes
 Pour nos controller: /App/Http/Controller
-```
+
 
 **IV- Emplacement des fichiers Upload**
 ```bash
